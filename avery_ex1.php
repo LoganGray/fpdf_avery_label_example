@@ -16,8 +16,8 @@ $pdf = new PDF_Label('5163');
 $pdf->AddPage();
 
 // Print labels
-for($i=1;$i<=20;$i++) {
-    $text = sprintf("%s\n%s\n%s\n%s %s, %s", "Laurent $i", '5163 Immeuble Toto', 'av. Fragonard', '06000', 'NICE', 'FRANCE');
+for($i=1;$i<=10;$i++) {
+    $text = sprintf("%s\n%s\n%s\n%s\n%s\n%s", "Line1 $i", '5163/8163 labeltype', 'line3', 'line4', 'line5', 'line6');
     $pdf->Add_Label($text);
 }
 
